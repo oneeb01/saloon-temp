@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- swiper link -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- fancybox link -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <!-- Animation link -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- boxicon link -->
+    <link rel="stylesheet" href="css/boxicons.min.css" />
+    <!-- My css link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Beauty Salon - Contact</title>
+    <link
+      rel="icon"
+      href="images/new/fav-icon.png"
+      type="image/gif"
+      sizes="20x20"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "tlstUtq52k4CD8w21",
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- hearder section strats here -->
+    <header class="header-area spa">
+      <div class="header-wrapper">
+        <div class="header-logo spa-section-title text-center">
+          <a href="index.html"><h2 style="color: #c0a290">Your Logo</h2></a>
+        </div>
+        <div class="main-menu">
+          <div class="mobile-menu-logo">
+            <a href="index.html"><h2 style="color: #c0a290">Your Logo</h2></a>
+          </div>
+          <ul class="menu-list">
+            <li class="menu-item-has-children active">
+              <a class="type1" href="index.html">HOME</a>
+            </li>
+            <li><a class="type1" href="about-us.html">About Us</a></li>
+            <li class="menu-item-has-children">
+              <a class="drop-down type1" href="all-treatments1.html">Services</a
+              ><i class="bi bi-plus dropdown-icon"></i>
+            </li>
+            <li><a class="type1" href="service-menu.html">Menu</a></li>
+
+            <li><a class="type1" href="contact.html">CONTACT</a></li>
+          </ul>
+          <div class="d-xl-none d-block">
+            <div class="mobile-search-area mb-30">
+              <form>
+                <div class="form-inner">
+                  <input type="text" placeholder="Enter your keywords" />
+                  <button type="submit" class="primary-btn1">Search Now</button>
+                </div>
+              </form>
+            </div>
+            <a class="primary-btn1" href="appointment.html">
+              BOOK APPOINTMENT
+              <svg
+                class="arrow"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 9L9 1M9 1C7.22222 1.33333 3.33333 2 1 1M9 1C8.66667 2.66667 8 6.33333 9 9"
+                  stroke="#1E1E1E"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="btn-area d-xl-flex d-none">
+          <a class="primary-btn1" href="appointment.html">
+            BOOK APPOINTMENT
+            <svg
+              class="arrow"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 9L9 1M9 1C7.22222 1.33333 3.33333 2 1 1M9 1C8.66667 2.66667 8 6.33333 9 9"
+                stroke="#1E1E1E"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="sidebar-button mobile-menu-btn">
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <!-- hearder section ends here -->
+
+    <!-- breadcrumb section strats here -->
+    <div
+      class="breadcrumb-section spa-breadcrumb"
+      style="
+        background-image: linear-gradient(
+            270deg,
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55) 101.02%
+          ),
+          url(images/new/contact-banner.jpg);
+      "
+    >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <div class="banner-content style-2 text-center">
+              <h1>CONTACT US</h1>
+              <ul class="breadcrumb-list">
+                <li><a href="index.html">Home</a></li>
+                <li>CONTACT US</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- breadcrumb section ends here -->
+
+    <!-- Enquiry section Start here -->
+    <div style="margin-top: 10%" class="enquery-section mb-120">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="enquery-form-wrapper style-2">
+              <form id="contactForm">
+                <div class="form-title mb-60">
+                  <h2>Ask Any Question</h2>
+                  <p>
+                    We believe in the power of relaxation and self-care. Located
+                    in the heart of the Lahore.
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 mb-30">
+                    <div class="form-inner style-2">
+                      <label>first name *</label>
+                      <input
+                        id="p_f-name"
+                        type="text"
+                        placeholder="Mr. Daniel"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-30">
+                    <div class="form-inner style-2">
+                      <label>last name</label>
+                      <input id="p_l-name" type="text" placeholder="Scoot" />
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-30">
+                    <div class="form-inner style-2">
+                      <label>phone number</label>
+                      <input
+                        id="p_phone"
+                        type="text"
+                        placeholder="+99 (0) *** ** ***"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-30">
+                    <div class="form-inner style-2">
+                      <label>email address *</label>
+                      <input
+                        id="p_email"
+                        type="email"
+                        placeholder="info@example.com"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-15">
+                    <div class="form-inner style-2">
+                      <label>message</label>
+                      <textarea
+                        id="p_message"
+                        placeholder="Write your enquiry..."
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 mb-50">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="contactCheck"
+                      />
+                      <label class="form-check-label" for="contactCheck">
+                        I will agree to business
+                        <strong>Terms & Conditions.</strong>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-inner">
+                      <button
+                        onclick="sendMail ()"
+                        class="primary-btn1 service-btn form-btn"
+                        type="submit"
+                      >
+                        SUBMIT ENQUIRY
+                        <svg
+                          class="arrow"
+                          width="10"
+                          height="10"
+                          viewBox="0 0 10 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L9 1M9 1C7.22222 1.33333 3.33333 2 1 1M9 1C8.66667 2.66667 8 6.33333 9 9"
+                            stroke="#1E1E1E"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Enquiry section ends here -->
+
+    <!-- Map section Start here -->
+    <div style="margin: 10% 0 10% 0" class="contact-page-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.5647631857846!2d90.36311167605992!3d23.83407118555764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c14c8682a473%3A0xa6c74743d52adb88!2sEgens%20Lab!5e0!3m2!1sen!2sbd!4v1700138349574!5m2!1sen!2sbd"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <!-- Map section ends here -->
+
+    <!-- Footer section starts here -->
+
+    <footer class="footer-section spa-footer">
+      <div class="container">
+        <div class="row g-lg-4 gy-5 mb-70">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-logo-section">
+              <div class="footer-top-section">
+                <a href="index.html" class="footer-logo">
+                  <h1 style="color: white">Your Logo</h1>
+                </a>
+                <p>St # 129, Main Bulevard, Johar Town, Lahore</p>
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/">
+                      <svg
+                        width="6"
+                        height="12"
+                        viewBox="0 0 6 12"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.81526 11.2483V6.46735H5.42818L5.66793 4.59543H3.81526V3.4031C3.81526 2.86293 3.96576 2.4931 4.74101 2.4931H5.72334V0.824182C5.24538 0.77296 4.76495 0.748228 4.28426 0.750099C2.85859 0.750099 1.87976 1.62043 1.87976 3.21818V4.59193H0.277344V6.46385H1.88326V11.2483H3.81526Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://youtube.com/">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.04462 1.74902H7.1225C7.84175 1.75165 11.4861 1.7779 12.4688 2.04215C12.7658 2.1228 13.0365 2.27999 13.2538 2.49803C13.471 2.71607 13.6273 2.98731 13.7069 3.28465C13.7952 3.61715 13.8574 4.05727 13.8994 4.5114L13.9081 4.6024L13.9274 4.8299L13.9344 4.9209C13.9913 5.72065 13.9983 6.46965 13.9991 6.63327V6.6989C13.9983 6.86865 13.9904 7.6684 13.9274 8.5014L13.9204 8.59327L13.9125 8.68427C13.8687 9.18477 13.804 9.68177 13.7069 10.0475C13.6273 10.3449 13.471 10.6161 13.2538 10.8341C13.0365 11.0522 12.7658 11.2094 12.4688 11.29C11.4537 11.563 7.59587 11.5823 7.06125 11.5831H6.937C6.66663 11.5831 5.54838 11.5779 4.37587 11.5376L4.22712 11.5324L4.151 11.5289L4.00138 11.5228L3.85175 11.5166C2.8805 11.4738 1.95563 11.4046 1.5295 11.2891C1.23255 11.2086 0.961931 11.0515 0.74467 10.8336C0.527409 10.6158 0.371108 10.3447 0.291375 10.0475C0.19425 9.68265 0.1295 9.18477 0.08575 8.68427L0.07875 8.5924L0.07175 8.5014C0.028318 7.90851 0.0043884 7.31436 0 6.7199L0 6.61227C0.00175 6.42415 0.00875 5.77402 0.056 5.05652L0.062125 4.9664L0.06475 4.9209L0.07175 4.8299L0.091 4.6024L0.09975 4.5114C0.14175 4.05727 0.203875 3.61627 0.29225 3.28465C0.371849 2.98731 0.528091 2.71607 0.74536 2.49803C0.96263 2.27999 1.23332 2.1228 1.53038 2.04215C1.9565 1.9284 2.88137 1.8584 3.85262 1.81465L4.00138 1.80852L4.15188 1.80327L4.22712 1.80065L4.37675 1.79452C5.2095 1.76775 6.04258 1.75287 6.87575 1.7499L7.04462 1.74902ZM5.6 4.55777V8.77352L9.23738 6.66652L5.6 4.55777Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g>
+                          <path
+                            d="M11.025 0.65625H13.1722L8.48225 6.0305L14 13.3438H9.68012L6.2965 8.9075L2.42462 13.3438H0.2765L5.29287 7.595L0 0.65625H4.43013L7.48825 4.71012L11.025 0.65625ZM10.2725 12.0557H11.4625L3.78262 1.87687H2.50688L10.2725 12.0557Z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.90719 4.1972C3.61209 4.1972 4.18353 3.62576 4.18353 2.92086C4.18353 2.21597 3.61209 1.64453 2.90719 1.64453C2.20229 1.64453 1.63086 2.21597 1.63086 2.92086C1.63086 3.62576 2.20229 4.1972 2.90719 4.1972Z"
+                        ></path>
+                        <path
+                          d="M5.38752 5.16523V12.2463H7.5861V8.74457C7.5861 7.82057 7.75994 6.92573 8.9056 6.92573C10.0355 6.92573 10.0495 7.98215 10.0495 8.8029V12.2469H12.2493V8.36365C12.2493 6.45615 11.8386 4.99023 9.60911 4.99023C8.53869 4.99023 7.82119 5.57765 7.52777 6.13357H7.49802V5.16523H5.38752ZM1.80469 5.16523H4.00677V12.2463H1.80469V5.16523Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-contact-section">
+                <div class="call-now-section">
+                  <span>Call Us</span>
+                  <h4><a href="tel:990737621432">+923302398765</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 d-flex justify-content-xl-end justify-content-lg-center justify-content-md-end"
+          >
+            <div class="footer-list">
+              <div class="footer-widget">
+                <div class="widget-title">
+                  <h4>Our Services</h4>
+                </div>
+                <ul class="widget-list">
+                  <li>
+                    <a href="all-treatments1.html"> Facials </a>
+                  </li>
+                  <li>
+                    <a href="all-treatments1.html"> Nails </a>
+                  </li>
+                  <li>
+                    <a href="all-treatments1.html"> Waxing </a>
+                  </li>
+
+                  <li>
+                    <a href="all-treatments1.html"> Eyelash Extension </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-lg-end">
+            <div class="footer-list">
+              <div class="footer-widget">
+                <div class="widget-title">
+                  <h4>OPENING HOURS</h4>
+                </div>
+                <ul>
+                  <li>MON - FRI <span>(11AM - 10PM)</span></li>
+                  <li>SAT - SUN <span>(11AM - 12AM)</span></li>
+                  <li>SUNDAY- <span>CLOSED</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-btm">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="footer-btm-content">
+                <div class="copyright-area">
+                  <p>
+                    © Copyright 2024
+                    <a href="index.html"> Oneeb Baig</a> | All Right Reserved
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jquery js link -->
+    <script data-cfasync="false" src="js/email-decode.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <!-- counterup js -->
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- marquee js -->
+    <script src="js/jquery.marquee.min.js"></script>
+    <!-- poper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- fancybox js -->
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    <script>
+      $(".marquee_text2").marquee({
+        direction: "left",
+        duration: 25000,
+        gap: 50,
+        delayBeforeStart: 0,
+        duplicated: true,
+        startVisible: true,
+      });
+    </script>
+
+    <script src="js/emailjs.js"></script>
+  </body>
+</html>
